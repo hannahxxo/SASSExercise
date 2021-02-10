@@ -1,4 +1,4 @@
-.minor h1, .minor h2 {
+.main h1:hover, .minor h1, .minor h2 {
   text-align: center;
   padding: 20px;
 }
@@ -12,8 +12,24 @@
   background: #964B00;
 }
 
+.main h1:hover {
+  text-decoration: underline;
+}
+
 .main h3 {
   color: #964B00;
+}
+
+.main:not(h4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .minor {
@@ -22,6 +38,7 @@
 
 .minor h1 {
   text-decoration: underline;
+  margin-bottom: 100px;
 }
 
 .minor h2 {

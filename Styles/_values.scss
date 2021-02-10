@@ -1,6 +1,20 @@
 $brown1: #964B00;
+$multiply: 25px;
 
 %center {
     text-align: center;
     padding: 20px;
+}
+
+// still needs work
+@mixin flex ($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $justify;
+}
+
+@mixin flex ($align) {
+    display: flex;
+    justify-content: $align;
+    align-items: $align;
 }
