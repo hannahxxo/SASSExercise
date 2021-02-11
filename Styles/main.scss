@@ -2,24 +2,24 @@
 
 .main {
     background: tan;
+    h4 {
+        display: none;
+    }
+    @include flex (space-between, center);
     h1 {
         color: #ddd;
         background: $brown1;
         &:hover {
             text-decoration: underline;
-            @extend %center
+            @extend %center;
         }
+    }
+    h2 {
+        background: $brown1;
     }
     h3 {
         color: $brown1;
     }
-}
-
-// Last BONUS question
-// h4 is still showing changes that they do not need applied to it
-// still needs 
-.main:not(h4) {
-    @include flex(flex-start)
 }
 
 .minor {

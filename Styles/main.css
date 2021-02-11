@@ -5,6 +5,19 @@
 
 .main {
   background: tan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main h4 {
+  display: none;
 }
 
 .main h1 {
@@ -16,20 +29,12 @@
   text-decoration: underline;
 }
 
-.main h3 {
-  color: #964B00;
+.main h2 {
+  background: #964B00;
 }
 
-.main:not(h4) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.main h3 {
+  color: #964B00;
 }
 
 .minor {

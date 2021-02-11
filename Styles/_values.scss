@@ -6,15 +6,10 @@ $multiply: 25px;
     padding: 20px;
 }
 
-// still needs work
-@mixin flex ($justify) {
+
+@mixin flex ($justify, $align) {
     display: flex;
     justify-content: $justify;
-    align-items: $justify;
-}
-
-@mixin flex ($align) {
-    display: flex;
-    justify-content: $align;
     align-items: $align;
 }
+
